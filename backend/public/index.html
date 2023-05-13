@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock_predictor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="https://images.livemint.com/img/2022/11/25/600x338/Multibagger_stocks_1669349102838_1669349103187_1669349103187.jpg">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="nv" id="main_nav" >
+        <div class="nav" style="position: fixed;">
+            <div class="right"><div class="nav_items"><a href="#main_nav">An Idea for Tomorrow</a></div></div>
+            <div class="left">
+                <a href="#Contributor_section"><div class="nav_item">Contributor</div></a>
+                <!-- <div class="nav_item">An Idea for Tomorrow</div> -->
+                <a href="#Collection_section"><div class="nav_item">Collection</div></a>
+                <!-- <div class="nav_item">An Idea for Tomorrow</div> -->
+                <a href="#mentor_section"><div class="nav_item">Our Mentor</div></a>
+            </div>
+            <!-- <div class="right">
+                <p>Investor Relations</p>
+                <p>Login</p>
+                <p>Signup</p>
+            </div> -->
+        </div>
+
+        <div class="logo">
+            <img src="logo-removebg-preview.png" alt="">
+        </div>
+
+        <div class="text">
+            <h1>Predict Your stocks</h1>
+            
+        </div>
+
+        <div class="inp" >
+            <div><input type="text" id='st' placeholder=" 🔍  search For stock"/></div>
+            <div id="suggestions" style="background-color: rgb(42, 42, 41);;">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="out_div">
+        <h1 id="out_stock_name"></h1>
+        <div class="zoom"><img id="out_img" /></div>
+        
+    
+    </div>
+
+
+    <div class="card" >
+        <div class="crd"  onclick="fun1('googl')">
+            <img src="./top_images/google.jpg" alt="">
+            <h3>Top stock 1</h3>
+            <p>Fatest growing</p>
+        </div>
+
+        <div class="crd" onclick="fun1('meta')">
+            <img src="./top_images/meta.png" alt="">
+            <h3>Top Stock 2</h3>
+            <p>slowly reaching</p>
+        </div>
+
+        <div class="crd " onclick="fun1('re')">
+            <img src="./top_images/re.png" alt="">
+            <h3>Top Stock 3</h3>
+            <p>long term</p>
+        </div>
+    </div>
+
+    <!-- <div class="coll" id="Collection_section">
+        <div class="txt">
+            <h1>Collections</h1>
+            <p>Various stocks listed</p>
+
+        </div>
+        <div class="rest">
+            <img src="image3.jpeg" alt="">
+            <img src="image3.jpeg" alt="">
+            <img src="image3.jpeg" alt="">
+            <img src="image3.jpeg" alt="">
+
+        </div>
+    </div> -->
+
+    <div class="mentor" id="mentor_section">
+        <div><h1>Mentor</h1></div>
+        <div class="mte">
+            <div class="mte-img">
+                <img src="mte.jpeg" alt="">
+
+            </div>
+            <div class="mte-text">
+               <h1>Dr. Bhupendra Singh Kirar</h1>
+               <br>
+                <p>
+                    Bhupendra Singh Kirar is presently working as an Assistant Professor in the department of Electronics and Communication Engineering, Indian Institute of Information Technology Bhopal, India. His research interest includes area of Signal/ Image processing, Signal/ Image Decomposition Techniques, Non-stationary Decomposition Techniques, Computer-aided Medical Diagnosis, Machine Learning, and Artificial Intelligence.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+<!-- contributor section -->
+    <div id="Contributor_section" class="coll" >
+        <div class="txt">
+            <h1>Contributor</h1>
+        </div>
+        <div class="rest-cnt">
+           <a href="https://hemantp88.github.io/portfolio_website/" target="blank" color>
+            <div class="ct">
+                <img src="./Contributor/hemant.png" alt="">
+                <div class="cnt-name">
+                    <p>Hemant Panchal</p>
+                </div>
+            </div></a>
+
+            <a href="https://tanav.xyz/" target="blank">
+            <div class="ct">
+                <img src="./Contributor/tanav.jpg" alt="">
+                <div class="cnt-name">
+                    <p>Tanav Singh Bajaj</p>
+                </div>
+            </div></a>
+
+            <a href="#" target="blank">
+                <div class="ct">
+                    <img src="./Contributor/anirudh.jpeg" alt="">
+                    <div class="cnt-name">
+                        <p>Anirudh Singh Hadda</p>
+                    </div>
+                </div></a>
+            
+                
+                <a href="#" target="blank">
+                    <div class="ct">
+                        <img src="./Contributor/vinayak.jpeg" alt="">
+                        <div class="cnt-name">
+                            <p>Vinayak Agarwal</p>
+                        </div>
+                    </div></a>
+                    
+            
+            
+
+       
+        </div>
+    </div>
+    <div class="footer">
+        <h1>
+            The broking gives you financial freedom
+            </b>
+        </h1>
+    </div>
+
+
+    
+
+
+</body>
+<script src="script.js"></script>
+</html>
